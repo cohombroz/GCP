@@ -52,7 +52,7 @@ CREATE TABLE  IF NOT EXISTS Recommendation
 SHOW DATABASES;
 ```
 
-###2. Зальем данные в подготовленные таблицы в CloudeSQL
+### 2. Зальем данные в подготовленные таблицы в CloudeSQL
 
 Создадим бакет в CloudStorage:
 
@@ -101,7 +101,7 @@ GROUP BY userId
 ORDER BY num_ratings DESC;
 ```
 
-###3. Развернем "Spark-считалку" (DataProc) 
+### 3. Развернем "Spark-считалку" (DataProc) 
 
 Создадим небольшой Hadoop-кластер для проекта и региона:
 ```
@@ -160,7 +160,7 @@ gsutil cp train_and_apply.py gs://$DEVSHELL_PROJECT_ID
 `gs://mlbasics/train_and_apply.py`
 
 
-###5. Посмотрим на результаты расчета
+### 5. Посмотрим на результаты расчета
 
 ```
 USE recommendation_spark;
